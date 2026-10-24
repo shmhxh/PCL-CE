@@ -75,6 +75,7 @@ public static partial class RegionPolicy
         var geoName = TryReadGeoName(out var geoAvailable);
         var languages = TryReadPreferredUiLanguages(out var languagesAvailable);
         var locale = TryReadUserLocale(out var localeAvailable);
+        string? timeZone = null;
         var timeZoneAvailable = false;
         try
         {
